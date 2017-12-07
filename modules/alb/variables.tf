@@ -52,15 +52,15 @@ variable "review_date" {
 }
 
 variable "application" {
-  default = "Customer Profile"
+  default = "p915"
 }
 
 variable "costcentre" {
-  default = "51754"
+  default = "00001"
 }
 
 variable "owner" {
-  default = "05_12_UK_Profile@uk.tesco.com"
+  default = "admin@javallejos.com"
 }
 
 variable "alb_security_group_id" {}

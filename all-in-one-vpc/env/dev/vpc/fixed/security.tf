@@ -5,8 +5,6 @@ resource "aws_security_group" "compute_cluster_security_group" {
 
   tags {
     Name = "ECS ${var.environment} Compute cluster security group"
-    tesco_environment_class = "${var.environment}"
-    tesco_environment = "${var.environment}"
   }
 }
 
@@ -16,8 +14,6 @@ resource "aws_security_group" "alb_security_group" {
   tags {
     Name = "alb ${var.environment} security group"
     environment = "${var.environment}"
-    tesco_environment_class = "${var.environment}"
-    tesco_environment = "${var.environment}"
   }
 }
 

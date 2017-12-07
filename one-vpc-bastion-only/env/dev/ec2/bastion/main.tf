@@ -75,10 +75,10 @@ resource "aws_security_group" "management_bastion_security_group" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  # for ssh
+  # for ntp (Ubuntu OS time synchronization)
   egress {
-    from_port = 22
-    to_port = 22
+    from_port = 123
+    to_port = 123
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

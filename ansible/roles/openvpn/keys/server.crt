@@ -1,0 +1,102 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=UK, ST=London, L=London, O=eaz-software, OU=javallejos vpn, CN=eaz-software CA/name=javallejos vpn/emailAddress=admin@javallejos.com
+        Validity
+            Not Before: Dec  7 15:49:51 2017 GMT
+            Not After : Dec  5 15:49:51 2027 GMT
+        Subject: C=UK, ST=London, L=London, O=eaz-software, OU=javallejos vpn, CN=openvpn.javallejos.com/name=javallejos vpn/emailAddress=admin@javallejos.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:f6:1b:11:51:ff:4a:83:a7:43:f4:4b:17:2e:6e:
+                    a3:0a:13:58:2c:1b:19:26:29:a2:ef:32:7f:85:2b:
+                    38:22:69:13:38:39:10:c5:8c:44:1f:0e:68:ad:ff:
+                    6b:28:d3:9e:c6:84:43:b0:7c:cd:71:7a:55:25:97:
+                    97:fb:a5:71:34:b5:73:2e:69:8e:6e:75:e3:3e:78:
+                    69:f6:62:13:7f:c3:eb:a5:85:37:e0:20:6b:01:93:
+                    59:96:df:e3:25:55:3f:36:8e:b4:fc:dc:2d:c1:8e:
+                    61:c0:23:d3:f9:64:2a:c3:b1:b7:ed:83:a1:06:d7:
+                    c6:84:22:26:fe:c2:47:a6:36:45:29:c5:28:99:e9:
+                    af:91:bb:d2:e9:48:3e:25:98:29:9d:bd:b5:8c:23:
+                    a9:5e:b6:83:bb:d5:09:25:41:ca:6e:12:a3:33:bd:
+                    a0:08:f8:42:fc:35:f3:cc:2a:6c:97:1d:a5:ca:29:
+                    6a:34:bb:02:c8:8c:45:90:b8:06:8e:2c:e0:c2:48:
+                    72:aa:14:d2:46:81:d6:fc:53:49:48:cf:90:7b:5e:
+                    0b:b9:03:61:8f:7d:de:76:9c:e7:94:e0:d4:5d:ff:
+                    0c:06:0c:ea:f1:9d:5f:08:17:6f:e3:33:c0:23:d8:
+                    07:d1:d1:a7:a1:36:75:ff:f9:f7:16:82:f9:21:d7:
+                    fd:bf
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                AA:3B:3D:21:F5:AC:FE:BB:B2:98:F1:5F:9B:E5:04:55:FF:8C:EA:D5
+            X509v3 Authority Key Identifier: 
+                keyid:9D:5E:B8:08:E6:05:D2:EA:F9:AF:4A:F2:D6:96:28:C6:EF:70:DE:5F
+                DirName:/C=UK/ST=London/L=London/O=eaz-software/OU=javallejos vpn/CN=eaz-software CA/name=javallejos vpn/emailAddress=admin@javallejos.com
+                serial:DE:98:1E:C5:5D:66:A3:36
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:openvpn.javallejos.com
+    Signature Algorithm: sha256WithRSAEncryption
+         03:f0:52:9c:c6:ff:06:2d:c2:bc:d9:fd:28:ca:cd:c3:6f:33:
+         86:c6:36:00:a8:e8:46:8c:41:94:b9:a9:5c:37:2a:c2:60:bd:
+         a9:09:42:49:9c:36:9b:c3:73:c5:50:55:9a:f8:cd:e9:a4:24:
+         d1:27:29:0c:de:1f:a7:c0:ed:07:ae:46:78:1c:38:2c:ec:8a:
+         4e:c6:78:38:85:59:fc:0d:1d:45:1c:bb:af:64:a1:bd:82:97:
+         08:a5:8c:95:19:c4:af:3f:4f:25:cd:22:6a:a4:45:3b:e8:f1:
+         4a:f8:95:be:ea:7a:4e:20:d5:b0:64:72:26:e2:05:b6:2a:70:
+         7e:89:00:fe:2e:42:aa:33:ee:20:68:51:58:f6:63:44:5c:68:
+         c7:76:ae:87:1c:74:cc:fb:80:90:a0:cc:46:25:6f:af:20:c1:
+         14:f0:83:20:f2:e4:53:6e:b9:82:b6:4d:7c:7b:fb:c6:3d:30:
+         81:9d:f4:1b:03:ec:fd:82:4e:12:d5:37:f8:d6:34:42:a8:f9:
+         4e:f2:63:c8:ff:93:05:da:ef:00:29:aa:60:2a:fc:61:45:59:
+         ab:fc:fe:ee:4e:a2:5f:8c:c6:44:3a:5c:7b:5d:fa:3f:2a:7e:
+         a4:a7:a5:c6:ed:29:36:4e:64:2c:e8:91:ba:86:b4:03:18:e3:
+         8b:9a:a2:df
+-----BEGIN CERTIFICATE-----
+MIIFnzCCBIegAwIBAgIBATANBgkqhkiG9w0BAQsFADCBtzELMAkGA1UEBhMCVUsx
+DzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRUwEwYDVQQKEwxlYXot
+c29mdHdhcmUxFzAVBgNVBAsTDmphdmFsbGVqb3MgdnBuMRgwFgYDVQQDEw9lYXot
+c29mdHdhcmUgQ0ExFzAVBgNVBCkTDmphdmFsbGVqb3MgdnBuMSMwIQYJKoZIhvcN
+AQkBFhRhZG1pbkBqYXZhbGxlam9zLmNvbTAeFw0xNzEyMDcxNTQ5NTFaFw0yNzEy
+MDUxNTQ5NTFaMIG+MQswCQYDVQQGEwJVSzEPMA0GA1UECBMGTG9uZG9uMQ8wDQYD
+VQQHEwZMb25kb24xFTATBgNVBAoTDGVhei1zb2Z0d2FyZTEXMBUGA1UECxMOamF2
+YWxsZWpvcyB2cG4xHzAdBgNVBAMTFm9wZW52cG4uamF2YWxsZWpvcy5jb20xFzAV
+BgNVBCkTDmphdmFsbGVqb3MgdnBuMSMwIQYJKoZIhvcNAQkBFhRhZG1pbkBqYXZh
+bGxlam9zLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPYbEVH/
+SoOnQ/RLFy5uowoTWCwbGSYpou8yf4UrOCJpEzg5EMWMRB8OaK3/ayjTnsaEQ7B8
+zXF6VSWXl/ulcTS1cy5pjm514z54afZiE3/D66WFN+AgawGTWZbf4yVVPzaOtPzc
+LcGOYcAj0/lkKsOxt+2DoQbXxoQiJv7CR6Y2RSnFKJnpr5G70ulIPiWYKZ29tYwj
+qV62g7vVCSVBym4SozO9oAj4Qvw188wqbJcdpcopajS7AsiMRZC4Bo4s4MJIcqoU
+0kaB1vxTSUjPkHteC7kDYY993nac55Tg1F3/DAYM6vGdXwgXb+MzwCPYB9HRp6E2
+df/59xaC+SHX/b8CAwEAAaOCAaswggGnMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEB
+BAQDAgZAMDQGCWCGSAGG+EIBDQQnFiVFYXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVy
+IENlcnRpZmljYXRlMB0GA1UdDgQWBBSqOz0h9az+u7KY8V+b5QRV/4zq1TCB7AYD
+VR0jBIHkMIHhgBSdXrgI5gXS6vmvSvLWlijG73DeX6GBvaSBujCBtzELMAkGA1UE
+BhMCVUsxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRUwEwYDVQQK
+EwxlYXotc29mdHdhcmUxFzAVBgNVBAsTDmphdmFsbGVqb3MgdnBuMRgwFgYDVQQD
+Ew9lYXotc29mdHdhcmUgQ0ExFzAVBgNVBCkTDmphdmFsbGVqb3MgdnBuMSMwIQYJ
+KoZIhvcNAQkBFhRhZG1pbkBqYXZhbGxlam9zLmNvbYIJAN6YHsVdZqM2MBMGA1Ud
+JQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAhBgNVHREEGjAYghZvcGVudnBu
+LmphdmFsbGVqb3MuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQAD8FKcxv8GLcK82f0o
+ys3DbzOGxjYAqOhGjEGUualcNyrCYL2pCUJJnDabw3PFUFWa+M3ppCTRJykM3h+n
+wO0HrkZ4HDgs7IpOxng4hVn8DR1FHLuvZKG9gpcIpYyVGcSvP08lzSJqpEU76PFK
++JW+6npOINWwZHIm4gW2KnB+iQD+LkKqM+4gaFFY9mNEXGjHdq6HHHTM+4CQoMxG
+JW+vIMEU8IMg8uRTbrmCtk18e/vGPTCBnfQbA+z9gk4S1Tf41jRCqPlO8mPI/5MF
+2u8AKapgKvxhRVmr/P7uTqJfjMZEOlx7Xfo/Kn6kp6XG7Sk2TmQs6JG6hrQDGOOL
+mqLf
+-----END CERTIFICATE-----

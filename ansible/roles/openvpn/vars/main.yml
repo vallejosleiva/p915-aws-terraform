@@ -1,0 +1,16 @@
+---
+
+openvpn_subnet_cidr: 10.8.0.0/24
+openvpn_subnet: 10.8.0.0
+
+openvpn_etcdir: /etc/openvpn
+openvpn_keydir: "{{openvpn_etcdir}}/keys"
+
+openvpn_log_location: /etc/openvpn/logs/openvpn.log
+
+# 0 is silent, except for fatal errors
+# 4 is reasonable for general usage
+# 5 and 6 can help to debug connection problems
+# 9 is extremely verbose
+openvpn_log_level_server: 4
+openvpn_log_level_client: 4

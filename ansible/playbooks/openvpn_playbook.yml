@@ -1,0 +1,19 @@
+---
+- name: "Provision Bastion Host"
+  hosts: all
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  gather_facts: no
+  vars:
+    vpn_domain_name: "{{ play_hosts[0] }}"
+    ansible_ssh_user: ubuntu
+  pre_tasks:
+    - shell: "wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg|apt-key add -"
+    - command: "touch /etc/apt/sources.list.d/openvpn-aptrepo.list"
+    - shell: "echo \"deb http://build.openvpn.net/debian/openvpn/release/2.4 trusty main\" > /etc/apt/sources.list.d/openvpn-aptrepo.list"
+    - group: name=developers state=present system=yes
+    - user: name=hah6 password=$6$rounds=656000$wQP6UT6UQRZqaPXK$VaiHSv7yAaZfAdCVOkaAIs0pwn5ldj06/v6.bv/KBRRzjeoO8PTgbfaqQPuvJaT.ScYee23k.Z/bYcCzHwHBr/ groups=sudo,developers shell=/bin/bash
+    - apt: update_cache=yes
+  roles:
+    - openvpn

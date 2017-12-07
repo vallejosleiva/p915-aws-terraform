@@ -1,0 +1,6 @@
+---
+
+- name: Stopping Openvpn service
+  service: name=openvpn state=stopped
+  tags:
+    - destroy

@@ -1,0 +1,23 @@
+---
+
+- name: "Install PAM."
+  apt: name={{ item }} state=present
+  with_items:
+  - libpam-pwdfile
+  - python-passlib
+
+- name: Setup PAM
+  copy:
+    src: ../configs/openvpn.pam
+    dest: "/etc/pam.d/openvpn"
+
+- name: Configure users
+  htpasswd: path={{openvpn_etcdir}}/users name={{item.name}} password={{item.password}} crypt_scheme=des_crypt
+  with_items: "{{ openvpn_use_pam_users }}"
+  
+- name: Configure server
+  template: src=server.j2 dest={{openvpn_etcdir}}/server.conf
+  notify: [openvpn restart]
+
+- name: Ensure openvpn key dir has the right permission
+  file: path={{openvpn_keydir}} state=directory mode=0700 owner={{openvpn_user}}

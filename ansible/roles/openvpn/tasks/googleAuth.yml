@@ -1,0 +1,25 @@
+---
+# Defines tasks applicable for Google Authenticator
+# Ubuntu trusty version, uses standard libpam-google-authenticator package
+
+- name: Ensure required packages are installed
+  apt: pkg={{ item }} state=present
+  with_items:
+    - libpam-google-authenticator
+    - libpam0g-dev
+    - libpam-dev
+  tags:
+    - dependencies
+
+- name: get users of the developer group to setup
+  shell: "cat /etc/group | grep --regex developer | awk -F: '{print $4}' | perl -npe 's/(,)/\n/g'"
+  register: developer_list
+
+- name: Copy over googleAuthenticator files for each user
+  copy:
+    src: "../keys/googleAuthenticator/{{ item }}_google_authenticator"
+    dest: "/home/{{ item }}/.google_authenticator"
+    owner: "{{ item }}"
+    group: "{{ item }}"
+    mode: "u+r,g-rwx,o-rwx"
+  with_items: "{{ developer_list.stdout_lines }}"  

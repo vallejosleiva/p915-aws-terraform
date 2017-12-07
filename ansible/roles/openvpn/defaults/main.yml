@@ -1,0 +1,43 @@
+---
+# Default settings (See OpenVPN documentation)
+# used in the ../template/server.j2 and also in the yml in the ../task directory.
+# please make sure you do a grep -r on the ansible folder before you change this to see where it is used
+
+# used in multiple files any combination of ../template/server.j2, any .yml in ../task directory &/or ../templates/client.conf.j2
+openvpn_enabled: yes                                # The role is enabled
+openvpn_etcdir: /etc/openvpn
+openvpn_keydir: "{{openvpn_etcdir}}/keys"
+openvpn_host: "{{vpn_domain_name}}"              # The server address
+openvpn_port: 443
+openvpn_proto: tcp
+openvpn_dev: tun
+openvpn_max_clients: 100
+openvpn_key_size: 2048
+openvpn_comp_lzo: yes    
+openvpn_verb: 3
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+# Default params setting the CHMOD against the /etc/openvpn/keys/ folder.
+#-----------------------------------------------------------------------------------------------------------------------------------
+openvpn_user: root
+openvpn_group: nogroup
+                                             
+#-----------------------------------------------------------------------------------------------------------------------------------
+# Default params for PAM local authentication. Please look at the ../vars/main/yml which defines what we want
+#-----------------------------------------------------------------------------------------------------------------------------------
+# Use PAM authentication
+openvpn_use_pam: yes
+openvpn_use_pam_users: []                         # If empty use system users
+                                                  # otherwise use users from the option
+                                                  # openvpn_use_pam_users:
+                                                  # - { name: user, password: password }
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+# used in the client.conf.j2. The Client.conf.j2 is used to generate the client.OVPN file which can used in TunnelBlick to test
+#-----------------------------------------------------------------------------------------------------------------------------------
+openvpn_clients: [client]                         # Make clients certificate
+openvpn_resolv_retry: infinite
+openvpn_client_to_client: yes
+openvpn_client_options: []                        # Additional client options
+                                                  # openvpn_client_options:
+                                                  # - dev-node MyTap
