@@ -8,5 +8,6 @@ else
    ENV=$1
 fi
 
-ansible-playbook -i "192.168.99.100," -u ubuntu ../../ansible/playbooks/openvpn_playbook.yml --extra-vars="ENV=$ENV" --skip-tag "destroy" --ask-vault-pass
-
+#ansible-playbook -i "192.168.99.100," -u ubuntu ../../ansible/playbooks/openvpn_playbook.yml --extra-vars="ENV=$ENV" --skip-tag "destroy" --ask-vault-pass
+#ansible-playbook -i "ip.ip.ip.ip," -u ubuntu ../../ansible/playbooks/openvpn_playbook.yml --extra-vars="ENV=$ENV" --skip-tag "destroy" --ask-vault-pass
+ansible-playbook -i ",openvpn.javallejos.com" -u ubuntu ../../ansible/playbooks/openvpn_playbook.yml --extra-vars="ENV=$ENV" --skip-tag "destroy" --ask-vault-pass
