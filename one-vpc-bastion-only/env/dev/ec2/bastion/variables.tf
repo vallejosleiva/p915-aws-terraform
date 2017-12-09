@@ -20,7 +20,7 @@ variable "project_name" {
 }
 
 variable "route53_hosted_zone_id" {
-  default = "ZR4R90Y40B111"
+  default = "Z14K2XS4F5D7S8"
 }
 
 variable "aws_assume_role_arn" {

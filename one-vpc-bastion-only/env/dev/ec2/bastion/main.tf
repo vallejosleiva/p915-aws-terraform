@@ -45,7 +45,7 @@ module "mngt_ec2_bastion" {
 module "mngt_ec2_bastion_dns_entry" {
   source = "../../../../../modules/dns_entry"
   hosted_zone_id = "${var.route53_hosted_zone_id}"
-  subdomain_name = "${var.environment}-vpn"
+  subdomain_name = "openvpn"
   ec2_instances_private_ip = ["${module.mngt_ec2_bastion.ec2_instance_public_ip}"]
 }
 
@@ -55,6 +55,14 @@ resource "aws_security_group" "management_bastion_security_group" {
   ingress {
     from_port = 22
     to_port = 22
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  # for vpn
+  ingress {
+    from_port = 443
+    to_port = 443
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

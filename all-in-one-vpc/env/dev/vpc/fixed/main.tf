@@ -19,7 +19,7 @@ module "app_vpc" {
   vpc_cidr    = "${var.app_vpc_cidr}"
   environment = "${var.environment}"
   project_name = "${var.project_name}"
-  private_hosted_zone_id = "ZR4R90Y40B111"
+  private_hosted_zone_id = "Z14K2XS4F5D7S8"
 }
 
 module "app_subnet_az_1" {

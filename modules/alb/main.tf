@@ -31,7 +31,7 @@ resource "aws_alb_listener" "https_alb_listener" {
 
 resource "aws_route53_record" "app_alb_public_hosted_zone" {
   zone_id = "${var.route53_hosted_zone_id}"
-  name = "${var.environment}-alb.jvallejos.gq"
+  name = "${var.environment}-alb.javallejos.com"
   type = "A"
 
   alias {
@@ -43,7 +43,7 @@ resource "aws_route53_record" "app_alb_public_hosted_zone" {
 
 resource "aws_route53_record" "app_alb_private_hosted_zone" {
   zone_id = "${var.private_hosted_zone_id}"
-  name = "${var.environment}-alb.jvallejos.gq"
+  name = "${var.environment}-alb.javallejos.com"
   type = "A"
 
   alias {

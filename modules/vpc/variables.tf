@@ -8,7 +8,7 @@ variable "project_name" {
 }
 
 variable "private_hosted_zone_id" {
-  default = "ZR4R90Y40B111"
+  default = "Z14K2XS4F5D7S8"
 }
 
 variable "enable_dns_hostnames" {
